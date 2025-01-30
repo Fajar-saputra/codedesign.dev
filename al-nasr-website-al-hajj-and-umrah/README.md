@@ -70,13 +70,14 @@ al-nasr/
 
 ## Typography
 
--   Primary Font: [Add font name]
+-   [Kufam](https://fonts.google.com/selection/embed)
+-   [Nonito](https://fonts.google.com/selection/embed)
 
 ## Resources
 
 -   Design inspiration: [codedesign.dev](https://codedesign.dev)
--   Icons: [codedesign.dev](https://codedesign.dev)
 -   Images: [codedesign.dev](https://codedesign.dev)
+-   Icons: [Boxicons](https://boxicons.com)
 
 ## License
 

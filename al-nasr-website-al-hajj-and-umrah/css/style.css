@@ -1,0 +1,252 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* 1. CSS Variables */
+:root {
+    --Kufam-font: "Kufam", serif;
+    --Nunito-font: "Nunito", serif;
+    --font-size-base: 16px;
+    --line-height: 1.5;
+    --border-radius: 8px;
+    --primary-color: #1da599;
+    --primary-hover-color: #188577;
+    --secondary-color: #ffc265;
+    --secondary-hover-color: #d9a24e;
+    --background-color: #f4f4f4;
+    --heading-color: #4a4a4a;
+    --paragraf-color: #454545;
+}
+
+/* 2. Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: var(--paragraf-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* 3. Utility Classes */
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-responsive {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+/* Flexbox Layout */
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+/* Button Styles */
+.button {
+    padding: .9rem 2.5rem;
+    border-radius: var(--border-radius);
+    color: var(--paragraf-color);
+    transition: background-color 0.3s ease;
+    font-family: var(--Nunito-font);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: fit-content;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+}
+
+.button-secondary:hover {
+    background-color: var(--secondary-hover-color);
+}
+
+.hero-title {
+    font-size: clamp(1.5rem, 2rem + 1vw, 3rem);
+
+    font-family: var(--first-font);
+    color: var(--heading-color);
+    font-family: var(--Kufam-font);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.section-title {
+    font-size: clamp(1.25rem, 1.5rem + 0.5vw, 2.5rem);
+
+    line-height: 1.4;
+    font-family: var(--first-font);
+    color: var(--heading-color);
+    font-family: var(--Kufam-font);
+    font-weight: bold;
+}
+
+.text-content {
+    line-height: 1.5;
+    color: var(--paragraf-color);
+    font-size: .9rem;
+    font-family: var(--Nunito-font);
+    font-weight: 600;
+}
+
+#menu-trigger {
+    display: block;
+    font-size: 1.5rem;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-hover-color);
+    transition: .3s all ease-in-out box-shadow;
+}
+
+#menu-trigger:hover {
+    box-shadow: 0 0 10px rgba(29, 165, 153, .5);
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    gap: 2rem;
+    display: none;
+}
+
+.nav .logo img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar .nav-link {
+    font-size: 1.2rem;
+    font-family: var(--Nunito-font);
+    font-weight: 600;
+}
+
+.hero {
+    padding: 4rem 0;
+}
+
+.hero-content {
+    order: 1;
+}
+
+.hero-content .button-secondary {
+    margin-top: 1rem;
+}
+
+.hero-image {
+    order: 0;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.about{
+    background-color:#f3fffe;
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    .d-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content {
+        order: 0;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+}
+
+@media (min-width: 992px) {
+
+
+}
+
+@media (min-width: 1200px) {
+    #menu-trigger {
+        display: block;
+    }
+}
+
+@media (min-width: 1400px) {}
