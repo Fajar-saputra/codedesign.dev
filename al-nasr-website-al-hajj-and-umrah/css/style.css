@@ -12,7 +12,7 @@
     --primary-hover-color: #188577;
     --secondary-color: #ffc265;
     --secondary-hover-color: #d9a24e;
-    --background-color: #f4f4f4;
+    --background-color: #ffffff;
     --heading-color: #4a4a4a;
     --paragraf-color: #454545;
 }
@@ -50,7 +50,7 @@ body {
 
 .grid-responsive {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
 }
 
 .text-center {
@@ -67,6 +67,10 @@ body {
 
 .gap-2 {
     gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
 }
 
 /* Flexbox Layout */
@@ -86,6 +90,7 @@ body {
     justify-content: space-between;
 }
 
+
 .align-center {
     align-items: center;
 }
@@ -97,6 +102,29 @@ body {
 .align-end {
     align-items: flex-end;
 }
+
+.m-center {
+    margin: 0 auto;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.border {
+    border: 1px solid red;
+}
+
 
 /* Button Styles */
 .button {
@@ -130,24 +158,18 @@ body {
     background-color: var(--secondary-hover-color);
 }
 
-.hero-title {
-    font-size: clamp(1.5rem, 2rem + 1vw, 3rem);
 
-    font-family: var(--first-font);
-    color: var(--heading-color);
-    font-family: var(--Kufam-font);
-    font-weight: bold;
-    line-height: 1.4;
+section {
+    padding: 4rem 0;
 }
 
 .section-title {
-    font-size: clamp(1.25rem, 1.5rem + 0.5vw, 2.5rem);
-
-    line-height: 1.4;
+    font-size: clamp(1.5rem, 2rem + 1vw, 3rem);
     font-family: var(--first-font);
     color: var(--heading-color);
     font-family: var(--Kufam-font);
     font-weight: bold;
+    line-height: 1.4;
 }
 
 .text-content {
@@ -173,7 +195,7 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1240px;
     width: 90%;
     margin: 0 auto;
 }
@@ -195,7 +217,7 @@ body {
 }
 
 .hero {
-    padding: 4rem 0;
+    padding-bottom: 4rem;
 }
 
 .hero-content {
@@ -208,17 +230,107 @@ body {
 
 .hero-image {
     order: 0;
-    max-width: 400px;
     width: 100%;
     display: flex;
+    width: 100%;
+}
+
+.hero-image img {
     margin: auto;
+    width: 400px;
+    height: 538px;
 }
 
-.about{
-    background-color:#f3fffe;
+.about {
+    background-color: #f3fffe;
 }
 
 
+.about-content {
+    height: 100%;
+}
+
+.about-content li {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    font-family: var(--Nunito-font);
+}
+
+.icons {
+    width: 36px;
+    height: 36px;
+    margin-right: 1rem;
+}
+
+.card-package {
+    width: 361px;
+    height: max-content;
+    gap: 10px;
+    padding: 1rem 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(29, 165, 153, 0.15);
+    background-color: #fff;
+}
+
+.class {
+    width: 52px;
+    height: 24px;
+    flex-grow: 0;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffc265;
+}
+
+.spesifikasi {
+    padding: .8rem 2rem;
+    background-color: #c1fffa;
+    font-family: var(--Nunito-font);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    color: #1da599;
+    position: relative;
+    left: 1rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+
+.item-content h2 {
+    font-family: var(--Kufam-font);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+.price {
+    width: 259px;
+    height: 28px;
+    flex-grow: 0;
+    font-family: Kufam;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+.price span {
+    color: #1da599;
+}
 
 /* Media Queries for Responsiveness */
 
@@ -228,6 +340,8 @@ body {
     .d-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
 
     .hero-content {
         order: 0;
@@ -239,8 +353,9 @@ body {
 }
 
 @media (min-width: 992px) {
-
-
+    .hero-image img {
+        max-width: 500px;
+    }
 }
 
 @media (min-width: 1200px) {
