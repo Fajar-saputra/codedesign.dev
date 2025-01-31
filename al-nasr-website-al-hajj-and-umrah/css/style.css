@@ -28,6 +28,8 @@
 
 img {
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -73,6 +75,10 @@ body {
     gap: 3rem;
 }
 
+.gap-4 {
+    gap: 4rem;
+}
+
 /* Flexbox Layout */
 .flex-column {
     flex-direction: column;
@@ -110,6 +116,7 @@ body {
 .mt-1 {
     margin-top: 1rem;
 }
+
 .mt-2 {
     margin-top: 2rem;
 }
@@ -117,6 +124,7 @@ body {
 .mb-1 {
     margin-bottom: 1rem;
 }
+
 .mb-2 {
     margin-bottom: 2rem;
 }
@@ -163,9 +171,16 @@ section {
     padding: 4rem 0;
 }
 
-.section-title {
+.hero-title {
     font-size: clamp(1.5rem, 2rem + 1vw, 3rem);
-    font-family: var(--first-font);
+    color: var(--heading-color);
+    font-family: var(--Kufam-font);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.section-title {
+    font-size: clamp(1.3rem, 1.3rem + 1vh, 3.3rem);
     color: var(--heading-color);
     font-family: var(--Kufam-font);
     font-weight: bold;
@@ -246,6 +261,10 @@ section {
 }
 
 
+.about .hero-image {
+    order: 0;
+}
+
 .about-content {
     height: 100%;
 }
@@ -286,6 +305,19 @@ section {
     letter-spacing: normal;
     text-align: left;
     color: #ffc265;
+}
+
+.grid-item:last-child .card-package {
+    height: 100%;
+    display: flex;
+}
+
+.soon-program {
+    font-family: var(--Kufam-font);
+    font-size: 1.3rem;
+    margin: auto;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .spesifikasi {
@@ -332,6 +364,38 @@ section {
     color: #1da599;
 }
 
+.rating {
+    padding: .8rem 2rem;
+    background-color: #c1fffa;
+    font-family: var(--Nunito-font);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    color: #1da599;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.rating i {
+    color: #d9a24e;
+}
+
+.airplane-body {
+    width: fit-content;
+    margin: 2rem auto 0;
+}
+
+.facilities {
+    background-color: #f3fffe;
+}
+
+.facilities .heading {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Media Queries for Responsiveness */
 
 @media (min-width: 576px) {}
@@ -341,14 +405,8 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-
-
     .hero-content {
         order: 0;
-    }
-
-    .hero-image {
-        order: 1;
     }
 }
 
