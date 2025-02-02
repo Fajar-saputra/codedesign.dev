@@ -50,8 +50,8 @@ halodok-hero/
 
 ## Typography
 
--   [Kufam](https://fonts.google.com/selection/embed)
--   [Nonito](https://fonts.google.com/selection/embed)
+-   [DM Sans](https://fonts.google.com/specimen/Source+Sans+3)
+-   [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
 
 ## Resources
 
