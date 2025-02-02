@@ -36,15 +36,7 @@ al-nasr/
 
 -   HTML5
 -   CSS3
--   JavaScript (Basic Interactions)
-
-## Design Components
-
--   Responsive navigation menu
--   Package cards
--   Testimonial section
--   Service information cards
--   Contact form
+-   JavaScript (Basic)
 
 ## Development Goals
 
@@ -62,11 +54,11 @@ al-nasr/
 
 ## Color Palette
 
--   Primary: [Add your color code]
--   Secondary: [Add your color code]
--   Accent: [Add your color code]
--   Background: [Add your color code]
--   Text: [Add your color code]
+-   Primary: #1da599
+-   Secondary: #ffc265
+-   Accent: #d9a24e
+-   Background: #ffffff
+-   Text: #454545
 
 ## Typography
 
