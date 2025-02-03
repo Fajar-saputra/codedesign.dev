@@ -75,6 +75,10 @@ list projects
 
 -   [Al Nasr - Website Al Hajj and Umrah (Community)](https://codedesign.dev/challenge/al-nasr) [UI designer Rafiq Al Hafizh Adha](https://www.figma.com/@rafiqadha)
 
+-   [Holadok Hero](https://codedesign.dev/challenge/holadok) [UI designer Nauval](https://www.figma.com/@mhd)
+
+-   [Construction Website](https://codedesign.dev/challenge/Construction) [UI designer BrainStew Studio](https://www.figma.com/@brainstewstudio)
+
 ## License
 
 This collection is created for educational purposes and personal development.
