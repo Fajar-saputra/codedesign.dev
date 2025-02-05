@@ -1,0 +1,180 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 1. CSS Variables */
+:root {
+    --font-family: 'Poppins', sans-serif;
+
+    --border-radius: 8px;
+    --primary-color: #ff7420;
+    --secondary-color: #191a19;
+    --button-hover-color: #2980b9;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white: #fff;
+    --gray: #777;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+/* body {
+    background-color: var(--gray);
+    color: var(--white);
+} */
+
+/* 3. Utility Classes */
+.main-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* Header Styles */
+
+.header-container {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar-header {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navbar-header .nav-item a {
+    font-size: .9rem   ;
+    color: var(--light-color);
+    text-decoration: none;
+    transition: color 0.3s;
+    padding-bottom: .2rem;
+    position: relative;
+}
+
+.navbar-header .nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-header .nav-item a:hover {
+    color: var(--primary-color);
+}
+
+.navbar-header .nav-item a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section .main-container {
+    background-image: url("/images/hero-image.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.hero .buttons a {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero .buttons a:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Section Cards */
+.section-cards {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--text-muted);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sm-hide {
+        display: none;
+    }
+
+    .d-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .d-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
