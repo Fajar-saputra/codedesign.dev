@@ -8,7 +8,6 @@
     --border-radius: 8px;
     --primary-color: #ff7420;
     --secondary-color: #191a19;
-    --button-hover-color: #2980b9;
     --text-color: #333;
     --background-color: #f4f4f4;
     --white: #fff;
@@ -46,7 +45,6 @@ img {
 
 
 /* Header Styles */
-
 .header-container {
     background-color: var(--secondary-color);
     color: var(--white);
@@ -73,7 +71,7 @@ img {
 }
 
 .navbar-header .nav-item a {
-    font-size: .9rem   ;
+    font-size: .9rem;
     color: var(--light-color);
     text-decoration: none;
     transition: color 0.3s;
@@ -101,42 +99,86 @@ img {
 }
 
 /* Hero Section */
-.hero-section .main-container {
-    background-image: url("/images/hero-image.png");
-    background-size: cover;
-    background-position: center;
-    color: var(--light-color);
-    text-align: center;
-    padding: 4rem 2rem;
+.hero-section {
 }
 
-.hero h1 {
+.hero-section .main-container {
+    color: var(--white);
+    padding: 4rem 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-image: url("/images/hero-image.png");
+    height: 100vh;
+    
+
+    max-width: 100%;
+    object-fit: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-title {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+.hero-title span {
+    color: var(--primary-color);
 }
 
-.hero .buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+.hero-description {
+    width: 400px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    font-size: .9rem;
 }
 
-.hero .buttons a {
+.button-primary {
     background-color: var(--primary-color);
     color: var(--light-color);
     padding: 0.75rem 1.5rem;
     border-radius: var(--border-radius);
     text-decoration: none;
     transition: background-color 0.3s;
+    margin-right: 1rem;
 }
 
-.hero .buttons a:hover {
-    background-color: var(--button-hover-color);
+.button-secondary {
+    background-color: var(--white);
+    color: var(--secondary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button-primary:hover {
+    background-color: var(--white);
+    color: var(--secondary-color);
+}
+
+.button-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.quality-assurance-box {
+    position: absolute;
+    background-color: var(--primary-color);
+    padding: 1.3rem;
+    border-radius: var(--border-radius);
+    bottom: -20%;
+    right: 20%;
+    font-size: .9rem;
+}
+
+.quality-assurance-box p {
+    margin: 1rem;
 }
 
 /* Section Cards */
